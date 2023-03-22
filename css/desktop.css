@@ -1,0 +1,27 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+  /*===================Header===================*/
+  .logo-link {
+    margin-right: 76px;
+  }
+  .contact-mail-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .contact-phone-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-mail {
+    margin-right: 40px;
+  }
+  /*===================/Header===================*/
+}
