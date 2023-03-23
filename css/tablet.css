@@ -92,4 +92,55 @@
     color: var(--accent-color);
   }
   /*===================/Header===================*/
+  /*===================Hero sectional===================*/
+  .hero-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    text-align: center;
+    background-size: 768px 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/tablet-hero@1x.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2e2f42;
+  }
+  .hero-title {
+    max-width: 496px;
+    margin: 0 auto 36px;
+    font-size: 56px;
+    line-height: 1.07;
+    color: #ffffff;
+  }
 }
+/*===================/Hero sectional===================*/
+
+/*===================Advantage===================*/
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpt) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/tablet-hero-@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .advantage-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+/*===================/Advantage===================*/

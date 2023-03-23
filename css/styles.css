@@ -56,15 +56,6 @@ img {
   }
 }
 
-/*
-
-
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-*/
-/*
 .visually-hidden {
   position: absolute;
   top: -150%;
@@ -83,6 +74,7 @@ img {
   outline: none;
   white-space: nowrap;
 }
+/*
 .visually-hidden-check {
   position: absolute;
   width: 1px;
@@ -105,6 +97,27 @@ img {
 }
 .logo-part {
   color: var(--accent-color);
+}
+.hero-btn {
+  padding: 16px 32px;
+  font-family: inherit;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  outline: transparent;
+  min-width: 169px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color var(--transition-dur-and-func);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
 }
 @media screen and (max-width: 767px) {
   /*===================Header===================*/
@@ -278,101 +291,92 @@ img {
     fill: #f4f4fd;
   }
   /*===================/Header===================*/
+  /*===================Hero sectional===================*/
+
+  .hero-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/mobile-hero@1x.jpg);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2e2f42;
+  }
+
+  .hero-title {
+    max-width: 320px;
+    margin: 0 auto 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #ffffff;
+  }
+  /*===================/Hero sectional===================*/
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpt) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/mobile-hero@2x.jpg);
+  }
 }
 
-/*===================Hero sectional===================*/
-/*
-.hero-section {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  text-align: center;
-
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/hero-img.jpg");
-  max-width: 1440px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #2e2f42;
+/*===================Advantage===================*/
+@media screen and (max-width: 767px) {
+  .advantage-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+  }
+  .sub-title {
+    text-align: center;
+  }
 }
-.hero-title {
-  max-width: 494px;
-  margin: 0 auto 48px;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  color: #ffffff;
+@media screen and (max-width: 1199px) {
+  .advantage-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .advantage-icon-wrapper {
+    display: none;
+  }
+  .sub-title {
+    margin-bottom: 8px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
 }
-.hero-btn {
-  padding: 16px 32px;
-  font-family: inherit;
-  background-color: #4d5ae5;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: transparent;
-  outline: transparent;
-  min-width: 169px;
-  border-radius: 4px;
+.text {
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  color: #ffffff;
-  transition: background-color var(--transition-dur-and-func);
+  letter-spacing: 0.02em;
+  color: #434455;
 }
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #404bbf;
-}
-*/
-/*===================/Hero sectional===================*/
-
-/*===================Advantage===================*/
-/*
-.advantage-list {
-  display: flex;
-  justify-content: space-between;
-}
-.advantage-item:not(:nth-child(4n)) {
-  margin-right: 24px;
-}
-.sub-title {
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.advantage-icon-wrapper {
-  height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-.advantage-icon {
-  width: 64px;
-  height: 64px;
-}
-*/
 /*===================/Advantage===================*/
 
 /*===================Gallery===================*/
-/*
-.gallery {
-  padding-bottom: 120px;
+@media screen and (max-width: 1199px) {
+  .gallery {
+    display: none;
+  }
 }
-.gallery-list {
-  display: flex;
-  justify-content: space-between;
-}
-*/
 /*===================/Gallery===================*/
 
 /*===================Our team===================*/
