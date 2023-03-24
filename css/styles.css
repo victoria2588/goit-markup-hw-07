@@ -951,6 +951,11 @@ img {
     row-gap: 72px;
     align-items: center;
   }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+  }
   .footer-logo {
     display: flex;
     flex-direction: column;
@@ -1012,6 +1017,7 @@ img {
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+    background-color: #2e2f42;
   }
   .footer-wrapper {
     display: flex;
