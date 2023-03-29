@@ -760,7 +760,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -788,7 +787,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .customers-link {
-    width: 190px;
+    max-width: 190px;
   }
   .customers-list {
     display: flex;
@@ -808,6 +807,9 @@ img {
     column-gap: 24px;
     row-gap: 72px;
     justify-content: center;
+  }
+  .customers-link {
+    width: 168px;
   }
 }
 
@@ -1234,18 +1236,6 @@ img {
   background-color: #404bbf;
 }
 /*===================/Modal form===================*/
-
-/*
-.body {
-  background-color: #ffffff;
-  font-family: var(--primary-font);
-  color: #2e2f42;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 16px;
-}
-*/
 
 /*===================Portfolio===================*/
 .btn-item {
